@@ -1,0 +1,1 @@
+precise_jump.privilege_required (Whether a privilege is required to perform precise jumps or not) bool false
