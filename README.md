@@ -1,5 +1,8 @@
 # Precise Jump
 
+[![build](https://github.com/Panquesito7/minetest-precise_jump/actions/workflows/build.yml/badge.svg)](https://github.com/Panquesito7/minetest-precise_jump/actions/)
+[![ContentDB](https://content.minetest.net/packages/Panquesito7/precise_jump/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/precise_jump/)
+
 Calculates jump time and reduces the speed of the player for a more realistic feeling.\
 This is something that's being used in a lot of **platformer** games. Very useful in:
 
