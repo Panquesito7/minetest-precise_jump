@@ -12,7 +12,7 @@ This is something that's being used in a lot of **platformer** games. Very usefu
 
 ![screenshot](https://github.com/Panquesito7/minetest-precise_jump/assets/51391473/4f58ebcb-155f-46fd-a783-1693b9ff3365)
 
-You can see a video of how the mod works here: https://youtu.be/TB1LNyI5Fzw
+You can see a video of how the mod works here: <https://youtu.be/TB1LNyI5Fzw>
 
 ## Settings
 
