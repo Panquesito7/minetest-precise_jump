@@ -18,10 +18,10 @@
 --]]
 
 local jump_time, is_holding = { }, { }
-local privilege_required = minetest.settings:get_bool("precise_jumps.privilege_required") or false
+local privilege_required = minetest.settings:get_bool("precise_jump.privilege_required") or false
 
 if privilege_required then
-    minetest.register_privilege({"precise_jumps"}, {
+    minetest.register_privilege({"precise_jump"}, {
         description = "Allows the player to perform precise jumps.",
         give_to_admin = true
     })
@@ -76,7 +76,7 @@ end
 minetest.register_globalstep(function(dtime)
     for _, player in ipairs(minetest.get_connected_players()) do
         if privilege_required then
-            if minetest.check_player_privs(player, {precise_jumps = true}) then
+            if minetest.check_player_privs(player, {precise_jump = true}) then
                 calculate_time(player)
             end
         else
