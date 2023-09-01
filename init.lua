@@ -20,9 +20,11 @@
 local jump_time, is_holding = { }, { }
 local privilege_required = minetest.settings:get_bool("precise_jump.privilege_required") or false
 
+local S = minetest.get_translator(minetest.get_current_modname())
+
 if privilege_required then
     minetest.register_privilege({"precise_jump"}, {
-        description = "Allows the player to perform precise jumps.",
+        description = S("Allows the player to perform precise jumps."),
         give_to_admin = true
     })
 end
