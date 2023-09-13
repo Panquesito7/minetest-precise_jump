@@ -12,7 +12,9 @@ This is something that's being used in a lot of **platformer** games. Very usefu
 
 ![screenshot](https://github.com/Panquesito7/minetest-precise_jump/assets/51391473/4f58ebcb-155f-46fd-a783-1693b9ff3365)
 
-You can see a video of how the mod works here: <https://youtu.be/TB1LNyI5Fzw>
+Here's a video showcasing the mod in action.
+
+[![Precise Jump showcase](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FTB1LNyI5Fzw)](https://youtu.be/TB1LNyI5Fzw)
 
 ## Settings
 
