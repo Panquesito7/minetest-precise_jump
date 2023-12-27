@@ -10,7 +10,7 @@ This is something that's being used in a lot of **platformer** games. Very usefu
 - The full jump isn't required in various cases.
 - Very specific cases, such as PvE and PvP.
 
-![screenshot](https://github.com/Panquesito7/minetest-precise_jump/assets/51391473/4f58ebcb-155f-46fd-a783-1693b9ff3365)
+![Screenshot](https://raw.githubusercontent.com/Panquesito7/minetest-precise_jump/main/screenshot.png)
 
 Here's a video showcasing the mod in action.
 
