@@ -1,6 +1,6 @@
 --[[
-    Removes player speed depending on the jump time for a more realistic feeling. Built for Minetest.
-    Copyright (C) 2023 David Leal (halfpacho@gmail.com)
+    Calculates jump time and reduces the jump height of the player for a more realistic feeling. Built for Minetest.
+    Copyright (C) 2023-2024 David Leal (halfpacho@gmail.com) and contributors
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -17,17 +17,14 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 --]]
 
-local jump_time, is_holding = { }, { }
-local privilege_required = minetest.settings:get_bool("precise_jump.privilege_required") or false
-
 local S = minetest.get_translator(minetest.get_current_modname())
+local jump_time, is_holding = { }, { }
 
-if privilege_required then
-    minetest.register_privilege({"precise_jump"}, {
-        description = S("Allows the player to perform precise jumps."),
-        give_to_admin = true
-    })
-end
+minetest.register_privilege("precise_jump", {
+    description = S("Allows the player to perform precise jumps."),
+    give_to_singleplayer = false,
+    give_to_admin = false
+})
 
 -- Table containing a list of velocities depending on the jump time.
 -- Modifying these values might cause unwanted side effects.
@@ -77,11 +74,7 @@ end
 
 minetest.register_globalstep(function(dtime)
     for _, player in ipairs(minetest.get_connected_players()) do
-        if privilege_required then
-            if minetest.check_player_privs(player, {precise_jump = true}) then
-                calculate_time(player)
-            end
-        else
+        if minetest.check_player_privs(player, { precise_jump = true }) then
             calculate_time(player)
         end
     end
