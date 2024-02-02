@@ -3,14 +3,16 @@
 [![luacheck](https://github.com/Panquesito7/minetest-precise_jump/actions/workflows/luacheck.yml/badge.svg)](https://github.com/Panquesito7/minetest-precise_jump/actions/)
 [![ContentDB](https://content.minetest.net/packages/Panquesito7/precise_jump/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/precise_jump/)
 
-Calculates jump time and reduces the jump height of the player for a more realistic feeling.\
+Calculates jump time and adjusts the jump height of the player for a more realistic feel.\
 This is something that's being used in a lot of **platformer** games. Very useful in:
 
 - Advanced parkours.
 - The full jump isn't required in various cases.
 - Very specific cases, such as PvE and PvP.
 
-![Screenshot](https://content.minetest.net/uploads/9c0c932591.png)
+In order to perform this, the player must have the `precise_jump` privilege.
+
+![Screenshot](https://content.minetest.net/uploads/752d1f54f5.png)
 
 Here's a video showcasing the mod in action.
 
